@@ -1,0 +1,429 @@
+/*  ESTILOS PARAA LA PAGINA WEB   */
+                                                /*Colores de la pagina*/
+ :root {
+ --color-azul: #00218f;
+ --color-naranja: #ff6a19;
+ --color-negro: #000000;
+ --color-light: #c90303;
+ --color-white: #ffffff;
+ --color-desinglass:#479FA4;
+ }
+ *{
+    font-family:'Time New Roman';
+    font-size: 30px;
+    color: rgb(0, 0, 0);   
+ }
+ body {
+    font-family: "Time New Roman";
+    font-weight: 500;
+    font-size: 20px;
+ }
+ h1 {
+    font-size: 28px;
+    color: var(--color-negro);
+  }
+ h2 {
+    font-family: "Century";
+    font-style: italic;
+    font-size: 28px;
+    text-align: left;
+    color: var(--color-light);
+ }
+ h3{
+    font-size: 20px;
+    color: var(--color-negro);
+ }
+ h4 {
+   font-family: "Century";
+   font-style: italic;
+   font-size: 15px;
+   color: var(--color-negro);
+ }
+ p {
+   font-size: 20px;
+   color: var(--color-negro);
+ }
+ 
+ /* Encabezado */
+ .section {
+    padding-top: 120px;
+    padding-bottom: 100px;
+ }
+ .encabezado{
+    width: 100%;
+    height: 125px;
+    position: fixed; z-index: 2;
+    background-color:#479FA4;
+    box-shadow: 2px -3px 14px 0px rgba(0,0,0,0.41);
+ }
+ .encabezado_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+ }
+ .contenedor{
+    max-width: 1190px;
+    margin: 0 auto;
+ }
+ .logo{
+    cursor: pointer;
+    width: 200px;
+    border-radius:10px;
+    height: 100px;
+    transition: transform ease 0.4s;
+    
+ }
+ .logo:hover {
+    transform: scale(1.08);
+    border-radius:10px;
+ }
+ .nav_links {
+    list-style: none;
+ }
+ .nav_item {
+   text-decoration: none;
+   color:var(--color-negro);
+   margin-left: 12px;
+
+   transition: color ease 0.1s;
+ }
+ .nav_item:hover {
+    color: var(--color-naranja);
+ }
+ .nav_item--selected {
+    color:var(--color-azul);
+ }
+ .nav_links li {
+    display: inline-block;
+ }
+
+
+ /*Muro*/
+ .muro-section, .muro-section1 {
+    background-image: url("./assets/img/4.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+ }
+ .muro-section-2{
+   background-image: url("./assets/img/cl2.avif");
+   height: cover;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+ }
+ .muro-sectionCotizacion {
+   background-image: url("./assets/img/cl3.jpg");
+   height: auto;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+ }
+ .muro-sectionContactos {
+   background-image: url("./assets/img/cl4.jpg");
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+ }
+ .muro-section2 {
+   background-image: url("./assets/img/cl6.jpg");
+   height: 100vh;
+   background-size: cover;
+   background-attachment: fixed;
+   }
+ .muro-section4 {
+      background-image: url("./assets/img/cl5.jpg");
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+   }
+  .muro, .muro1{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+ .muro_title {
+    width: 70%;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: var(--color-white);
+ }
+ .muro_subtitle {
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: var(--color-white);
+ }
+ .muro-section-page {
+    height: 270px;
+ }
+
+ .muro_title-page {
+    margin-top: 130px;
+ }
+ .info_coulumna{
+    display: flex;
+    padding-top: 60px;
+    width: 100%;
+ }
+
+ .coulumna{
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+ }
+
+ .lord-icon {
+    margin-bottom: 30px;
+    z-index: -10;
+ } 
+ .separador {
+    height: 430px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+ .separador-informacion {
+   background-image: url("./assets/img/fondo.jpg"); 
+   width: 97%;
+   height: 30%;
+   border-radius: 0px 100vw 100vw 0px;
+   height: 50vh;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+ }
+ .separador-informacionDer{
+   background-image: url("./assets/img/fondo.jpg");
+   float: right; 
+   width: 97%;
+   height: 30%;
+   border-radius: 100px 0vw 0vw 100px;
+   height: 50vh;
+   background-size: cover;
+   position:center;
+   background-attachment: fixed;
+ }
+
+ /*Pie de pagina*/
+ .footer {
+   padding-top: 3%;
+   padding-bottom: 3%;
+   background-color: var(--color-desinglass);
+ }
+ .footer__coulums {
+   display: flex;
+   margin-bottom: 10px;
+   margin-left: 30px;
+ }
+
+ .footer-coulum {
+   width: 33.33%;
+   height: 100%;
+   padding-right: 60px;
+ }
+
+ .footer__title {
+   margin-bottom: 10px;
+   color: var(--color-white);
+ }
+ .footer__title1 {
+   margin-bottom: 10px;
+   color: var(--color-white);
+ }
+
+ .footer__text {
+   margin-bottom: 10px;
+   color: var(--color-white);
+ }
+
+ .footer__credits {
+   color: var(--color-white);
+   text-align: center;
+ }
+ .formImput{
+   width: 60%;
+   height: 5%;
+   font-size: 25px;
+   padding: 16px;
+   outline: none;
+   border: none;
+   border: 1px solid rgb(2, 141, 255);
+   border-radius: 20px;
+ }
+ .form_imput-mensaje{
+   font-size: 20px;
+   resize: none;
+   padding: 1.8em 1em;
+   margin-bottom: .5em;
+   width: 700px;
+   height: 30%;
+ }
+ .boton{
+    font-size: 20px;
+    background-color: var(--color-desinglass);
+    color: #000000;
+    border: 1px solid #000000;
+    font-weight: 300;
+    padding: 20px 10px;
+    border-radius: 20px;
+
+
+ }     
+
+ @media(max-width: 450px){
+    .h1 {
+      font-size: 20px;
+    }
+    .h2 {
+      font-family: "Century";
+      font-style: italic;
+      font-size: 28px;
+      text-align: left;
+      color: var(--color-light);
+    }
+    .h3{
+      font-size: 20px;
+      color: var(--color-negro);
+    }
+    .h4 {
+     font-family: "Century";
+     font-style: italic;
+     font-size: 15px;
+     color: var(--color-negro);
+    }
+    .contenedor {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+     }
+     .logo{
+      cursor: pointer;
+      border-radius:10px;
+      height: 90px;
+      transition: transform ease 0.4s;
+     }
+     .texmenu{
+        font-size: 15px;
+     }
+     .centtrar{
+        margin-right: 51px;
+     }
+     .section {
+        padding: 5%;
+     }
+     
+     .encabezado-items {
+        flex-direction: column;
+     }
+
+     .nav {
+        margin-top: 20px;
+     }
+     .nav_item {
+      margin-left: 12px;
+      
+    }
+    .nav_item--selected {
+      color:var(--color-naranja);
+    }
+     .muro-section {
+        background-attachment: initial;
+        padding: cover;
+        height: auto;
+     }
+     .muro-section2 {
+         background-attachment: initial;
+         padding: 0 25px;
+     }
+     .muro-sectionContactos{
+      background-attachment: initial;
+      padding: cover;
+      height: auto;
+     }
+     .muro-section4 {
+      background-attachment: initial;
+        padding: cover;
+        height: auto;
+      }
+
+     .muro_title {
+        width: 95%;
+        font-size: 25px;
+     }
+
+     .muro_subtitle {
+        font-size: 24px;
+     }
+
+     .muro_title--page {
+        margin-top: 160px;
+     }
+     .separador-informacion{
+        width: 90%;
+        height: 10%;
+        background-position: center;
+        background-attachment: initial;
+        border-radius: 0px 12vw 12vw 0px;
+        font-size: 20px;
+     }
+    .separador-informacionDer{
+      width: 90%;
+      height: 10%;
+      background-position: center;
+      background-attachment:initial;
+      border-radius: 12px 0vw 0vw 12px;
+    }
+    .form_imput-mensaje{
+      resize: none;
+      padding: 1.8em 1em;
+      margin-bottom: .5em;
+      width: 300px;
+      height: 30%;
+    }
+    .muro-section1 {
+      background-image: url("./assets/img/fondo.jpg");
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .muro1{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+   }
+   .footer__title1 {
+      margin-bottom: 10px;
+      margin-top: 80px;
+      color: var(--color-white);
+    }
+    .footer__coulums {
+      flex-direction: column;
+    }
+
+    .footer-coulum {
+      width: 100%;
+      margin-bottom: 50px;
+      padding: 0;
+    }
+
+    .footer-coulum:last-child {
+      margin-bottom: 0;
+    }
+    
+ }    
+
+
+
+

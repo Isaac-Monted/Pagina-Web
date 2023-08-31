@@ -1,0 +1,125 @@
+/*        REGLAS PARA LA PAGINA WEB
+*/
+ *{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    }
+   body {
+    margin: 0;
+   }
+   img {
+    border-style: none;
+    max-width: 100%;
+   }
+   main {
+    display: block;
+   }
+   a {
+    background-color: transparent;
+    text-decoration: none;
+   }
+   ul, figure{
+    margin: 0;
+    padding: 0;
+   }
+   .ul{
+    list-style: none;
+    display: flex;
+   }
+   .ul-li{
+    width: 48%;
+   }
+   .ul-li-figure{
+    padding: 5px;
+    position: relative;
+    top: 20px;
+   }
+   ul li figure:hover figcaption{
+    cursor: pointer;
+    opacity: 1;
+    display: block;
+   }
+   ul li figcaption{
+    position: absolute;
+    opacity: 0;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background:rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 15px;
+    font: 18px/30px Century;
+    color: white;
+    transition: all 0.7s;
+   }
+
+   nav ul {
+     float: right;
+     margin-right: 40px;
+   }
+   nav ul li {
+     display: inline-block;
+     line-height: 120px;
+     margin: 0 5px;
+   }
+   nav ul li a {
+     color: black;
+     font-size: 20px;
+     padding: 7px 10px;
+     border-radius: 3%;
+     text-transform: uppercase;
+   }
+   li a.active, li a:hover {
+     color: var(--color-naranja);
+     transition: 0.5s;
+   }
+   .chekbtn{
+     font-size: 30px;
+     color: black;
+     float: right;
+     line-height: 120px;
+     margin-right: 50px;
+     cursor: pointer;
+     display: none;
+   }
+   #chek{
+     display: none;
+   }   
+   @media(max-width: 450px){
+    ul li figcaption{
+      font: 2px/10px Century;
+      padding: 10px;
+      top: 3px;
+      left: 3px;
+      bottom: 3px;
+      right: 3px;
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+    .chekbtn{
+      display: block;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 20px;
+    }
+    nav ul li a {
+      color: white;
+      font-size: 20px;
+    }
+    li a.active, li a:hover {
+      background: none;
+      color: var(--color-naranja);
+    }
+    #chek:checked ~ ul {
+      left: 0;
+    }
+   }
